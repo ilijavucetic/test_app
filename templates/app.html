@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+Test
+
+{% if articles.count > 0 %}
+
+{% for article in articles %}
+<div>
+    <h2>{{article.title }} +++ {{  article.category }}</h2>
+</div>
+
+{% endfor %}
+
+{% else %}
+<p>None to show</p>
+
+{% endif %}
+
+</body>
+</html>
